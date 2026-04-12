@@ -53,7 +53,7 @@ int main(void) {
         }
     }
     
-    quickSort(a[k - 1], 0, n - 1);
+    quickSort(a[k - 1], 0, m - 1);
     
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
