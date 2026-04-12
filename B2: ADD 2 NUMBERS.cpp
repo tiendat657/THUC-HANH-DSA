@@ -19,7 +19,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
       // di chuyen de xet tiep
         curr = curr->next;
         if (l1 != nullptr) l1 = l1->next;
-        if (l1 != nullptr) l1 = l1->next;
+        if (l2 != nullptr) l2= l2->next;
     }
     return dummy.next;
 }
