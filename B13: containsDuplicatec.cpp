@@ -1,5 +1,6 @@
       --- BAI GIAI ---
 
+C1: Sort
 void swap(int &a, int &b) {
     int temp = a;
     a = b;
@@ -47,3 +48,17 @@ bool containsDuplicate(vector<int> &nums) {
     
     return false;
 }
+
+C2: Set
+bool containsDuplicate(vector<int> &nums) {
+    int n = (int)nums.size();
+    set<int> se;
+    
+    for (int x : nums) {
+        se.insert(x);
+    }
+    
+    return se.size() < n;
+}
+
+C3: Hash map
